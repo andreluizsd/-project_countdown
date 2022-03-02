@@ -1,0 +1,84 @@
+{
+    "env": {
+        "browser": true,
+        "es2021": true
+    },
+    "extends": [
+        "plugin:react/recommended",
+        "plugin:@typescript-eslint/recommended",
+        "airbnb",
+        "prettier"
+    ],
+    "globals": {
+        "React": "readonly",
+         "JSX": "readonly"
+      },
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true
+        },
+        "ecmaVersion": 13,
+        "sourceType": "module"
+    },
+    "plugins": [
+        "react",
+        "@typescript-eslint",
+        "react-hooks",
+        "prettier"
+    ],
+    "rules": {
+      "jsx-a11y/label-has-associated-control": "off",
+      "no-unused-vars": "off",
+      "no-console": "warn",
+      "prettier/prettier": "error",
+      "camelcase": "off",
+      "react/prop-types": "off",
+      "no-use-before-define": "off",
+      "import/no-duplicates": "off",
+      "@typescript-eslint/no-use-before-define": ["error"],
+      "react/jsx-props-no-spreading": "off",
+      "react/jsx-one-expression-per-line": "off",
+      "react-hooks/rules-of-hooks": "error",
+      "react-hooks/exhaustive-deps": "warn",
+      "import/prefer-default-export": "off",
+      "@typescript-eslint/no-empty-function": "off",
+      "react/function-component-definition": [2, { "unnamedComponents": "function-expression" }],
+      "react/jsx-no-undef": "off",
+
+
+      
+          "react/jsx-filename-extension": [
+              1,
+              {
+                "extensions": [
+                  ".tsx"
+                ]
+              }
+            ],
+           
+            "import/extensions": [
+              "error",
+              "ignorePackages",
+              {
+                "ts": "never",
+                "tsx": "never"
+              }
+            ],
+            "@typescript-eslint/explicit-function-return-type": [
+              "error",
+              {
+                "allowExpressions": true
+              }
+            ]
+            
+          },
+          "settings": {
+            "react": {
+              "version": "detect"
+            },
+            "import/resolver": {
+              "typescript": {}
+            }
+          }
+}
