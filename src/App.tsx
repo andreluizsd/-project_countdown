@@ -67,7 +67,7 @@ function App(): JSX.Element {
           alignItems="center"
           justifyContent="center"
         >
-          <HStack mb="10rem" w="40%" gap={4} color="white">
+          <HStack mb="10rem" gap={4} color="white">
             <Flex alignItems="center">
               Minutes:
               <Input
