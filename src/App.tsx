@@ -99,7 +99,7 @@ function App(): JSX.Element {
             <Heading size="4xl">:</Heading>
             <Heading size="4xl">{seconds.toString().padStart(2, "0")}</Heading>
           </Box>
-          <Flex>
+          <Flex mt={16}>
             <Button
               colorScheme="whatsapp"
               w="100px"
